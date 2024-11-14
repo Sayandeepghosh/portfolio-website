@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQdP8/3sHq72c0bTx8+K6MX7KZQY5RS9Nn0pXJ+cG9+g5bK5wV4kKZjOqT0G5e4jLGHp24Ad0xv6YIgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Library for Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="#home">MyPortfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+        <div class="container" data-aos="fade-up">
+            <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-img">
+            <h1>John Doe</h1>
+            <p>Graphic Designer & Web Developer</p>
+            <a href="#contact" class="btn">Request a Quote</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container" data-aos="fade-right">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm John Doe, a passionate graphic designer and web developer with over 5 years of experience creating stunning visuals and user-friendly websites. I specialize in branding, UI/UX design, and front-end development.
+            </p>
+            <p>
+                My mission is to help businesses establish a strong online presence through creative and effective design solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container" data-aos="fade-up">
+            <h2>My Best Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="zoom-in">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                    <h3>Project One</h3>
+                    <p>Brief description of Project One.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                    <h3>Project Two</h3>
+                    <p>Brief description of Project Two.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                    <h3>Project Three</h3>
+                    <p>Brief description of Project Three.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="content" class="section content-section">
+        <div class="container" data-aos="fade-left">
+            <h2>What I Offer</h2>
+            <p>
+                I offer a wide range of services including graphic design, web development, branding, and UI/UX design. Whether you're looking to create a new website, refresh your brand identity, or develop a user-friendly application, I have the skills and expertise to bring your vision to life.
+            </p>
+            <ul>
+                <li>Graphic Design</li>
+                <li>Web Development</li>
+                <li>Branding</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section cta-section">
+        <div class="container" data-aos="fade-up">
+            <h2>Ready to Start Your Project?</h2>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container" data-aos="fade-up">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <footer class="footer">
+        <div class="container" data-aos="fade-up">
+            <div class="social-media">
+                <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+                <!-- Add more social links as needed -->
+            </div>
+            <p>&copy; 2024 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- AOS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
